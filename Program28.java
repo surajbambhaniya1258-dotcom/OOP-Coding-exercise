@@ -28,7 +28,6 @@ public class DataFileAnalysis {
                 }
             }
 
-            // Display results
             System.out.println("Total Lines: " + lineCount);
             System.out.println("Total Words: " + wordCount);
             System.out.println("Total Characters (excluding spaces & newlines): " + charCount);
