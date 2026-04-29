@@ -20,11 +20,11 @@ public class Main {
     public static void main(String[] args) {
 
         Triangle t = new Triangle();
-        t.getData(10, 5); // base and height
+        t.getData(10, 5);
         System.out.println("Area of Triangle: " + t.calculateArea());
 
         Rectangle r = new Rectangle();
-        r.gzzetData(4, 6); // length and width
+        r.gzzetData(4, 6); 
         System.out.println("Area of Rectangle: " + r.calculateArea());
     }
 }
