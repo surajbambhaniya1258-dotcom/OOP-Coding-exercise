@@ -27,7 +27,7 @@ class BankAccount {
 }
 
 class SavingAccount extends BankAccount {
-    private double interestRate = 4.0; // %
+    private double interestRate = 4.0; 
 
     public void calculateInterest() {
         double interest = (balance * interestRate) / 100;
@@ -35,7 +35,7 @@ class SavingAccount extends BankAccount {
     }
 }
 class FixedDepositAccount extends BankAccount {
-    private double rate = 6.5; // %
+    private double rate = 6.5; 
     private int years = 2;
 
     public void maturityAmount() {
@@ -43,12 +43,8 @@ class FixedDepositAccount extends BankAccount {
         System.out.println("Maturity Amount (FD): " + maturity);
     }
 }
-
-// Main class
 public class Main {
     public static void main(String[] args) {
-
-        // Saving Account
         SavingAccount sa = new SavingAccount();
         sa.openAccount("SA101", "Dharmik", 10000);
         sa.deposit(2000);
@@ -58,7 +54,6 @@ public class Main {
 
         System.out.println();
 
-        // Fixed Deposit Account
         FixedDepositAccount fd = new FixedDepositAccount();
         fd.openAccount("FD201", "Rahul", 20000);
         fd.checkBalance();
