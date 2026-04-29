@@ -23,7 +23,7 @@ public class College {
 
         public void displayData() {
             System.out.println("\n--- Admission Details ---");
-            System.out.println("College Name: " + collegeName); // accessing outer class member
+            System.out.println("College Name: " + collegeName); 
             System.out.println("Student Name: " + studentName);
             System.out.println("Course: " + course);
         }
