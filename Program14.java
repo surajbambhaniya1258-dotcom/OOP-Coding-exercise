@@ -3,21 +3,16 @@ class BankAccount {
     protected String accountHolderName;
     protected double balance;
 
-    // Method to open account
     public void openAccount(String accNo, String name, double initialBalance) {
         accountNumber = accNo;
         accountHolderName = name;
         balance = initialBalance;
         System.out.println("Account opened successfully for " + accountHolderName);
     }
-
-    // Deposit method
     public void deposit(double amount) {
         balance += amount;
         System.out.println("Deposited: " + amount);
     }
-
-    // Withdraw method
     public void withdraw(double amount) {
         if (amount <= balance) {
             balance -= amount;
@@ -26,14 +21,11 @@ class BankAccount {
             System.out.println("Insufficient balance!");
         }
     }
-
-    // Check balance
     public void checkBalance() {
         System.out.println("Current Balance: " + balance);
     }
 }
 
-// SavingAccount subclass
 class SavingAccount extends BankAccount {
     private double interestRate = 4.0; // %
 
@@ -42,8 +34,6 @@ class SavingAccount extends BankAccount {
         System.out.println("Interest (Saving Account): " + interest);
     }
 }
-
-// FixedDepositAccount subclass
 class FixedDepositAccount extends BankAccount {
     private double rate = 6.5; // %
     private int years = 2;
